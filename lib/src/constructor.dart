@@ -8,7 +8,7 @@ part 'constructor.g.dart';
 @freezed
 abstract class DartConstructor with _$DartConstructor {
   const factory DartConstructor({
-    @required String name,
+    required String name,
     @Default([]) List<DartProperty> properties,
   }) = _DartConstructor;
 

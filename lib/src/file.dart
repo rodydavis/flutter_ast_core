@@ -11,7 +11,7 @@ part 'file.g.dart';
 @freezed
 abstract class DartFile with _$DartFile {
   const factory DartFile({
-    String path,
+    String? path,
     @Default([]) List<DartClass> classes,
     @Default([]) List<DartEnum> enums,
     @Default([]) List<DartField> fields,

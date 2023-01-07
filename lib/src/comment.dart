@@ -14,5 +14,5 @@ abstract class DartComment with _$DartComment {
 }
 
 extension DartCommentUtils on DartComment {
-  String get comment => this?.lines == null ? '' : this.lines.join('\n');
+  String get comment => this.lines.join('\n');
 }

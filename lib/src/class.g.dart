@@ -6,41 +6,31 @@ part of 'class.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_DartClass _$_$_DartClassFromJson(Map<String, dynamic> json) {
-  return _$_DartClass(
-    constructors: (json['constructors'] as List)
-            ?.map((e) => e == null
-                ? null
-                : DartConstructor.fromJson(e as Map<String, dynamic>))
-            ?.toList() ??
-        [],
-    comments: (json['comments'] as List)
-            ?.map((e) => e == null
-                ? null
-                : DartComment.fromJson(e as Map<String, dynamic>))
-            ?.toList() ??
-        [],
-    fields: (json['fields'] as List)
-            ?.map((e) => e == null
-                ? null
-                : DartField.fromJson(e as Map<String, dynamic>))
-            ?.toList() ??
-        [],
-    methods: (json['methods'] as List)
-            ?.map((e) => e == null
-                ? null
-                : DartMethod.fromJson(e as Map<String, dynamic>))
-            ?.toList() ??
-        [],
-    name: json['name'] as String,
-    isAbstract: json['isAbstract'] as bool,
-    extendsClause: json['extendsClause'] as String,
-    implementsClause: json['implementsClause'] as String,
-    withClause: json['withClause'] as String,
-  );
-}
+_$_DartClass _$$_DartClassFromJson(Map<String, dynamic> json) => _$_DartClass(
+      constructors: (json['constructors'] as List<dynamic>?)
+              ?.map((e) => DartConstructor.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      comments: (json['comments'] as List<dynamic>?)
+              ?.map((e) => DartComment.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      fields: (json['fields'] as List<dynamic>?)
+              ?.map((e) => DartField.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      methods: (json['methods'] as List<dynamic>?)
+              ?.map((e) => DartMethod.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      name: json['name'] as String,
+      isAbstract: json['isAbstract'] as bool?,
+      extendsClause: json['extendsClause'] as String?,
+      implementsClause: json['implementsClause'] as String?,
+      withClause: json['withClause'] as String?,
+    );
 
-Map<String, dynamic> _$_$_DartClassToJson(_$_DartClass instance) =>
+Map<String, dynamic> _$$_DartClassToJson(_$_DartClass instance) =>
     <String, dynamic>{
       'constructors': instance.constructors,
       'comments': instance.comments,

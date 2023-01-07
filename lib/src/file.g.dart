@@ -6,37 +6,31 @@ part of 'file.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_DartFile _$_$_DartFileFromJson(Map<String, dynamic> json) {
-  return _$_DartFile(
-    path: json['path'] as String,
-    classes: (json['classes'] as List)
-            ?.map((e) => e == null
-                ? null
-                : DartClass.fromJson(e as Map<String, dynamic>))
-            ?.toList() ??
-        [],
-    enums: (json['enums'] as List)
-            ?.map((e) =>
-                e == null ? null : DartEnum.fromJson(e as Map<String, dynamic>))
-            ?.toList() ??
-        [],
-    fields: (json['fields'] as List)
-            ?.map((e) => e == null
-                ? null
-                : DartField.fromJson(e as Map<String, dynamic>))
-            ?.toList() ??
-        [],
-    imports: (json['imports'] as List)?.map((e) => e as String)?.toList() ?? [],
-    methods: (json['methods'] as List)
-            ?.map((e) => e == null
-                ? null
-                : DartMethod.fromJson(e as Map<String, dynamic>))
-            ?.toList() ??
-        [],
-  );
-}
+_$_DartFile _$$_DartFileFromJson(Map<String, dynamic> json) => _$_DartFile(
+      path: json['path'] as String?,
+      classes: (json['classes'] as List<dynamic>?)
+              ?.map((e) => DartClass.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      enums: (json['enums'] as List<dynamic>?)
+              ?.map((e) => DartEnum.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      fields: (json['fields'] as List<dynamic>?)
+              ?.map((e) => DartField.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      imports: (json['imports'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
+      methods: (json['methods'] as List<dynamic>?)
+              ?.map((e) => DartMethod.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+    );
 
-Map<String, dynamic> _$_$_DartFileToJson(_$_DartFile instance) =>
+Map<String, dynamic> _$$_DartFileToJson(_$_DartFile instance) =>
     <String, dynamic>{
       'path': instance.path,
       'classes': instance.classes,

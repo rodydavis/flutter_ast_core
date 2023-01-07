@@ -1,11 +1,9 @@
 name: flutter_ast_core
 description: A new Flutter package project.
 version: 0.0.1
-author:
-homepage:
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=3.0.0-46.0.dev <4.0.0"
 
 dependencies:
   freezed_annotation: any
@@ -15,3 +13,7 @@ dev_dependencies:
   build_runner: any
   freezed: any
   json_serializable: any
+
+scripts:
+  build: flutter pub run build_runner build --delete-conflicting-outputs
+  watch: flutter pub run build_runner watch --delete-conflicting-outputs
