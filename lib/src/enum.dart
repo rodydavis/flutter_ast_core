@@ -6,8 +6,8 @@ part 'enum.g.dart';
 @freezed
 abstract class DartEnum with _$DartEnum {
   const factory DartEnum({
-    @required String name,
-    @required List<String> values,
+    required String name,
+    required List<String> values,
   }) = _DartEnum;
 
   factory DartEnum.fromJson(Map<String, dynamic> json) =>

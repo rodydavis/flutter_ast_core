@@ -6,15 +6,15 @@ part 'core.g.dart';
 @freezed
 abstract class DartCore with _$DartCore {
   const factory DartCore({
-    @required String type,
-    @required String value,
+    required String type,
+    required String value,
   }) = _DartCore;
 
   const factory DartCore.property({
-    @required String name,
-    String key,
-    @required String type,
-    DartCore value,
+    required String name,
+    String? key,
+    required String type,
+    DartCore? value,
     @Default(true) bool isOptional,
     @Default(false) bool isNamed,
     @Default(false) bool isPositional,
@@ -23,13 +23,13 @@ abstract class DartCore with _$DartCore {
     @Default(false) bool isSynthetic,
     @Default(false) bool isRequiredNamed,
     @Default(false) bool isOptionalNamed,
-    int position,
+    int? position,
   }) = DartProperty;
 
   const factory DartCore.field({
-    @required String name,
-    @required String type,
-    DartCore value,
+    required String name,
+    required String type,
+    DartCore? value,
     @Default(false) bool isFinal,
     @Default(false) bool isConst,
     @Default(false) bool isStatic,

@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'method.dart';
 
@@ -8,96 +10,87 @@ part of 'method.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 DartMethod _$DartMethodFromJson(Map<String, dynamic> json) {
   return _DartMethod.fromJson(json);
 }
 
 /// @nodoc
-class _$DartMethodTearOff {
-  const _$DartMethodTearOff();
-
-// ignore: unused_element
-  _DartMethod call(
-      {@required String name,
-      List<DartProperty> parameters = const [],
-      @required MethodNode body}) {
-    return _DartMethod(
-      name: name,
-      parameters: parameters,
-      body: body,
-    );
-  }
-
-// ignore: unused_element
-  DartMethod fromJson(Map<String, Object> json) {
-    return DartMethod.fromJson(json);
-  }
-}
-
-/// @nodoc
-// ignore: unused_element
-const $DartMethod = _$DartMethodTearOff();
-
-/// @nodoc
 mixin _$DartMethod {
-  String get name;
-  List<DartProperty> get parameters;
-  MethodNode get body;
+  String get name => throw _privateConstructorUsedError;
+  List<DartProperty> get parameters => throw _privateConstructorUsedError;
+  MethodNode get body => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $DartMethodCopyWith<DartMethod> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $DartMethodCopyWith<DartMethod> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $DartMethodCopyWith<$Res> {
   factory $DartMethodCopyWith(
           DartMethod value, $Res Function(DartMethod) then) =
-      _$DartMethodCopyWithImpl<$Res>;
+      _$DartMethodCopyWithImpl<$Res, DartMethod>;
+  @useResult
   $Res call({String name, List<DartProperty> parameters, MethodNode body});
 
   $MethodNodeCopyWith<$Res> get body;
 }
 
 /// @nodoc
-class _$DartMethodCopyWithImpl<$Res> implements $DartMethodCopyWith<$Res> {
+class _$DartMethodCopyWithImpl<$Res, $Val extends DartMethod>
+    implements $DartMethodCopyWith<$Res> {
   _$DartMethodCopyWithImpl(this._value, this._then);
 
-  final DartMethod _value;
   // ignore: unused_field
-  final $Res Function(DartMethod) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object name = freezed,
-    Object parameters = freezed,
-    Object body = freezed,
+    Object? name = null,
+    Object? parameters = null,
+    Object? body = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed ? _value.name : name as String,
-      parameters: parameters == freezed
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      parameters: null == parameters
           ? _value.parameters
-          : parameters as List<DartProperty>,
-      body: body == freezed ? _value.body : body as MethodNode,
-    ));
+          : parameters // ignore: cast_nullable_to_non_nullable
+              as List<DartProperty>,
+      body: null == body
+          ? _value.body
+          : body // ignore: cast_nullable_to_non_nullable
+              as MethodNode,
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MethodNodeCopyWith<$Res> get body {
-    if (_value.body == null) {
-      return null;
-    }
     return $MethodNodeCopyWith<$Res>(_value.body, (value) {
-      return _then(_value.copyWith(body: value));
+      return _then(_value.copyWith(body: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DartMethodCopyWith<$Res> implements $DartMethodCopyWith<$Res> {
-  factory _$DartMethodCopyWith(
-          _DartMethod value, $Res Function(_DartMethod) then) =
-      __$DartMethodCopyWithImpl<$Res>;
+abstract class _$$_DartMethodCopyWith<$Res>
+    implements $DartMethodCopyWith<$Res> {
+  factory _$$_DartMethodCopyWith(
+          _$_DartMethod value, $Res Function(_$_DartMethod) then) =
+      __$$_DartMethodCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, List<DartProperty> parameters, MethodNode body});
 
   @override
@@ -105,49 +98,60 @@ abstract class _$DartMethodCopyWith<$Res> implements $DartMethodCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$DartMethodCopyWithImpl<$Res> extends _$DartMethodCopyWithImpl<$Res>
-    implements _$DartMethodCopyWith<$Res> {
-  __$DartMethodCopyWithImpl(
-      _DartMethod _value, $Res Function(_DartMethod) _then)
-      : super(_value, (v) => _then(v as _DartMethod));
+class __$$_DartMethodCopyWithImpl<$Res>
+    extends _$DartMethodCopyWithImpl<$Res, _$_DartMethod>
+    implements _$$_DartMethodCopyWith<$Res> {
+  __$$_DartMethodCopyWithImpl(
+      _$_DartMethod _value, $Res Function(_$_DartMethod) _then)
+      : super(_value, _then);
 
-  @override
-  _DartMethod get _value => super._value as _DartMethod;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object name = freezed,
-    Object parameters = freezed,
-    Object body = freezed,
+    Object? name = null,
+    Object? parameters = null,
+    Object? body = null,
   }) {
-    return _then(_DartMethod(
-      name: name == freezed ? _value.name : name as String,
-      parameters: parameters == freezed
-          ? _value.parameters
-          : parameters as List<DartProperty>,
-      body: body == freezed ? _value.body : body as MethodNode,
+    return _then(_$_DartMethod(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      parameters: null == parameters
+          ? _value._parameters
+          : parameters // ignore: cast_nullable_to_non_nullable
+              as List<DartProperty>,
+      body: null == body
+          ? _value.body
+          : body // ignore: cast_nullable_to_non_nullable
+              as MethodNode,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_DartMethod implements _DartMethod {
   const _$_DartMethod(
-      {@required this.name, this.parameters = const [], @required this.body})
-      : assert(name != null),
-        assert(parameters != null),
-        assert(body != null);
+      {required this.name,
+      final List<DartProperty> parameters = const [],
+      required this.body})
+      : _parameters = parameters;
 
   factory _$_DartMethod.fromJson(Map<String, dynamic> json) =>
-      _$_$_DartMethodFromJson(json);
+      _$$_DartMethodFromJson(json);
 
   @override
   final String name;
-  @JsonKey(defaultValue: const [])
+  final List<DartProperty> _parameters;
   @override
-  final List<DartProperty> parameters;
+  @JsonKey()
+  List<DartProperty> get parameters {
+    if (_parameters is EqualUnmodifiableListView) return _parameters;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_parameters);
+  }
+
   @override
   final MethodNode body;
 
@@ -159,38 +163,38 @@ class _$_DartMethod implements _DartMethod {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _DartMethod &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.parameters, parameters) ||
-                const DeepCollectionEquality()
-                    .equals(other.parameters, parameters)) &&
-            (identical(other.body, body) ||
-                const DeepCollectionEquality().equals(other.body, body)));
+        (other.runtimeType == runtimeType &&
+            other is _$_DartMethod &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality()
+                .equals(other._parameters, _parameters) &&
+            (identical(other.body, body) || other.body == body));
   }
 
+  @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(parameters) ^
-      const DeepCollectionEquality().hash(body);
+  int get hashCode => Object.hash(runtimeType, name,
+      const DeepCollectionEquality().hash(_parameters), body);
 
+  @JsonKey(ignore: true)
   @override
-  _$DartMethodCopyWith<_DartMethod> get copyWith =>
-      __$DartMethodCopyWithImpl<_DartMethod>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_DartMethodCopyWith<_$_DartMethod> get copyWith =>
+      __$$_DartMethodCopyWithImpl<_$_DartMethod>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_DartMethodToJson(this);
+    return _$$_DartMethodToJson(
+      this,
+    );
   }
 }
 
 abstract class _DartMethod implements DartMethod {
   const factory _DartMethod(
-      {@required String name,
-      List<DartProperty> parameters,
-      @required MethodNode body}) = _$_DartMethod;
+      {required final String name,
+      final List<DartProperty> parameters,
+      required final MethodNode body}) = _$_DartMethod;
 
   factory _DartMethod.fromJson(Map<String, dynamic> json) =
       _$_DartMethod.fromJson;
@@ -202,11 +206,13 @@ abstract class _DartMethod implements DartMethod {
   @override
   MethodNode get body;
   @override
-  _$DartMethodCopyWith<_DartMethod> get copyWith;
+  @JsonKey(ignore: true)
+  _$$_DartMethodCopyWith<_$_DartMethod> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 MethodNode _$MethodNodeFromJson(Map<String, dynamic> json) {
-  switch (json['runtimeType'] as String) {
+  switch (json['runtimeType']) {
     case 'default':
       return MethodBase.fromJson(json);
     case 'values':
@@ -219,186 +225,168 @@ MethodNode _$MethodNodeFromJson(Map<String, dynamic> json) {
       return MethodSimple.fromJson(json);
 
     default:
-      throw FallThroughError();
+      throw CheckedFromJsonException(json, 'runtimeType', 'MethodNode',
+          'Invalid union type "${json['runtimeType']}"!');
   }
 }
-
-/// @nodoc
-class _$MethodNodeTearOff {
-  const _$MethodNodeTearOff();
-
-// ignore: unused_element
-  MethodBase call({@required String name}) {
-    return MethodBase(
-      name: name,
-    );
-  }
-
-// ignore: unused_element
-  MethodValues values({@required String name, List<MethodNode> values}) {
-    return MethodValues(
-      name: name,
-      values: values,
-    );
-  }
-
-// ignore: unused_element
-  MethodBinary binary(
-      {@required String name,
-      @required MethodNode left,
-      @required MethodNode right,
-      @required String operation}) {
-    return MethodBinary(
-      name: name,
-      left: left,
-      right: right,
-      operation: operation,
-    );
-  }
-
-// ignore: unused_element
-  MethodConstructor constructor(
-      {@required String name,
-      @required String value,
-      Map<String, MethodNode> arguments = const {}}) {
-    return MethodConstructor(
-      name: name,
-      value: value,
-      arguments: arguments,
-    );
-  }
-
-// ignore: unused_element
-  MethodSimple simple({@required String name, @required dynamic value}) {
-    return MethodSimple(
-      name: name,
-      value: value,
-    );
-  }
-
-// ignore: unused_element
-  MethodNode fromJson(Map<String, Object> json) {
-    return MethodNode.fromJson(json);
-  }
-}
-
-/// @nodoc
-// ignore: unused_element
-const $MethodNode = _$MethodNodeTearOff();
 
 /// @nodoc
 mixin _$MethodNode {
-  String get name;
-
+  String get name => throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(String name), {
-    @required Result values(String name, List<MethodNode> values),
-    @required
-        Result binary(
-            String name, MethodNode left, MethodNode right, String operation),
-    @required
-        Result constructor(
-            String name, String value, Map<String, MethodNode> arguments),
-    @required Result simple(String name, dynamic value),
-  });
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default, {
+    required TResult Function(String name, List<MethodNode>? values) values,
+    required TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)
+        binary,
+    required TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)
+        constructor,
+    required TResult Function(String name, dynamic value) simple,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(String name), {
-    Result values(String name, List<MethodNode> values),
-    Result binary(
-        String name, MethodNode left, MethodNode right, String operation),
-    Result constructor(
-        String name, String value, Map<String, MethodNode> arguments),
-    Result simple(String name, dynamic value),
-    @required Result orElse(),
-  });
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default, {
+    TResult? Function(String name, List<MethodNode>? values)? values,
+    TResult? Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult? Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult? Function(String name, dynamic value)? simple,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(MethodBase value), {
-    @required Result values(MethodValues value),
-    @required Result binary(MethodBinary value),
-    @required Result constructor(MethodConstructor value),
-    @required Result simple(MethodSimple value),
-  });
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    TResult Function(String name, List<MethodNode>? values)? values,
+    TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult Function(String name, dynamic value)? simple,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(MethodBase value), {
-    Result values(MethodValues value),
-    Result binary(MethodBinary value),
-    Result constructor(MethodConstructor value),
-    Result simple(MethodSimple value),
-    @required Result orElse(),
-  });
-  Map<String, dynamic> toJson();
-  $MethodNodeCopyWith<MethodNode> get copyWith;
+  TResult map<TResult extends Object?>(
+    TResult Function(MethodBase value) $default, {
+    required TResult Function(MethodValues value) values,
+    required TResult Function(MethodBinary value) binary,
+    required TResult Function(MethodConstructor value) constructor,
+    required TResult Function(MethodSimple value) simple,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(MethodBase value)? $default, {
+    TResult? Function(MethodValues value)? values,
+    TResult? Function(MethodBinary value)? binary,
+    TResult? Function(MethodConstructor value)? constructor,
+    TResult? Function(MethodSimple value)? simple,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(MethodBase value)? $default, {
+    TResult Function(MethodValues value)? values,
+    TResult Function(MethodBinary value)? binary,
+    TResult Function(MethodConstructor value)? constructor,
+    TResult Function(MethodSimple value)? simple,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $MethodNodeCopyWith<MethodNode> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $MethodNodeCopyWith<$Res> {
   factory $MethodNodeCopyWith(
           MethodNode value, $Res Function(MethodNode) then) =
-      _$MethodNodeCopyWithImpl<$Res>;
+      _$MethodNodeCopyWithImpl<$Res, MethodNode>;
+  @useResult
   $Res call({String name});
 }
 
 /// @nodoc
-class _$MethodNodeCopyWithImpl<$Res> implements $MethodNodeCopyWith<$Res> {
+class _$MethodNodeCopyWithImpl<$Res, $Val extends MethodNode>
+    implements $MethodNodeCopyWith<$Res> {
   _$MethodNodeCopyWithImpl(this._value, this._then);
 
-  final MethodNode _value;
   // ignore: unused_field
-  final $Res Function(MethodNode) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object name = freezed,
+    Object? name = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed ? _value.name : name as String,
-    ));
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class $MethodBaseCopyWith<$Res> implements $MethodNodeCopyWith<$Res> {
-  factory $MethodBaseCopyWith(
-          MethodBase value, $Res Function(MethodBase) then) =
-      _$MethodBaseCopyWithImpl<$Res>;
+abstract class _$$MethodBaseCopyWith<$Res>
+    implements $MethodNodeCopyWith<$Res> {
+  factory _$$MethodBaseCopyWith(
+          _$MethodBase value, $Res Function(_$MethodBase) then) =
+      __$$MethodBaseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name});
 }
 
 /// @nodoc
-class _$MethodBaseCopyWithImpl<$Res> extends _$MethodNodeCopyWithImpl<$Res>
-    implements $MethodBaseCopyWith<$Res> {
-  _$MethodBaseCopyWithImpl(MethodBase _value, $Res Function(MethodBase) _then)
-      : super(_value, (v) => _then(v as MethodBase));
+class __$$MethodBaseCopyWithImpl<$Res>
+    extends _$MethodNodeCopyWithImpl<$Res, _$MethodBase>
+    implements _$$MethodBaseCopyWith<$Res> {
+  __$$MethodBaseCopyWithImpl(
+      _$MethodBase _value, $Res Function(_$MethodBase) _then)
+      : super(_value, _then);
 
-  @override
-  MethodBase get _value => super._value as MethodBase;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object name = freezed,
+    Object? name = null,
   }) {
-    return _then(MethodBase(
-      name: name == freezed ? _value.name : name as String,
+    return _then(_$MethodBase(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$MethodBase implements MethodBase {
-  const _$MethodBase({@required this.name}) : assert(name != null);
+  const _$MethodBase({required this.name, final String? $type})
+      : $type = $type ?? 'default';
 
   factory _$MethodBase.fromJson(Map<String, dynamic> json) =>
-      _$_$MethodBaseFromJson(json);
+      _$$MethodBaseFromJson(json);
 
   @override
   final String name;
+
+  @JsonKey(name: 'runtimeType')
+  final String $type;
 
   @override
   String toString() {
@@ -408,53 +396,67 @@ class _$MethodBase implements MethodBase {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is MethodBase &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)));
+        (other.runtimeType == runtimeType &&
+            other is _$MethodBase &&
+            (identical(other.name, name) || other.name == name));
   }
 
+  @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(name);
+  int get hashCode => Object.hash(runtimeType, name);
 
+  @JsonKey(ignore: true)
   @override
-  $MethodBaseCopyWith<MethodBase> get copyWith =>
-      _$MethodBaseCopyWithImpl<MethodBase>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MethodBaseCopyWith<_$MethodBase> get copyWith =>
+      __$$MethodBaseCopyWithImpl<_$MethodBase>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(String name), {
-    @required Result values(String name, List<MethodNode> values),
-    @required
-        Result binary(
-            String name, MethodNode left, MethodNode right, String operation),
-    @required
-        Result constructor(
-            String name, String value, Map<String, MethodNode> arguments),
-    @required Result simple(String name, dynamic value),
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default, {
+    required TResult Function(String name, List<MethodNode>? values) values,
+    required TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)
+        binary,
+    required TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)
+        constructor,
+    required TResult Function(String name, dynamic value) simple,
   }) {
-    assert($default != null);
-    assert(values != null);
-    assert(binary != null);
-    assert(constructor != null);
-    assert(simple != null);
     return $default(name);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(String name), {
-    Result values(String name, List<MethodNode> values),
-    Result binary(
-        String name, MethodNode left, MethodNode right, String operation),
-    Result constructor(
-        String name, String value, Map<String, MethodNode> arguments),
-    Result simple(String name, dynamic value),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default, {
+    TResult? Function(String name, List<MethodNode>? values)? values,
+    TResult? Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult? Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult? Function(String name, dynamic value)? simple,
   }) {
-    assert(orElse != null);
+    return $default?.call(name);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    TResult Function(String name, List<MethodNode>? values)? values,
+    TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult Function(String name, dynamic value)? simple,
+    required TResult orElse(),
+  }) {
     if ($default != null) {
       return $default(name);
     }
@@ -463,32 +465,38 @@ class _$MethodBase implements MethodBase {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(MethodBase value), {
-    @required Result values(MethodValues value),
-    @required Result binary(MethodBinary value),
-    @required Result constructor(MethodConstructor value),
-    @required Result simple(MethodSimple value),
+  TResult map<TResult extends Object?>(
+    TResult Function(MethodBase value) $default, {
+    required TResult Function(MethodValues value) values,
+    required TResult Function(MethodBinary value) binary,
+    required TResult Function(MethodConstructor value) constructor,
+    required TResult Function(MethodSimple value) simple,
   }) {
-    assert($default != null);
-    assert(values != null);
-    assert(binary != null);
-    assert(constructor != null);
-    assert(simple != null);
     return $default(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(MethodBase value), {
-    Result values(MethodValues value),
-    Result binary(MethodBinary value),
-    Result constructor(MethodConstructor value),
-    Result simple(MethodSimple value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(MethodBase value)? $default, {
+    TResult? Function(MethodValues value)? values,
+    TResult? Function(MethodBinary value)? binary,
+    TResult? Function(MethodConstructor value)? constructor,
+    TResult? Function(MethodSimple value)? simple,
   }) {
-    assert(orElse != null);
+    return $default?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(MethodBase value)? $default, {
+    TResult Function(MethodValues value)? values,
+    TResult Function(MethodBinary value)? binary,
+    TResult Function(MethodConstructor value)? constructor,
+    TResult Function(MethodSimple value)? simple,
+    required TResult orElse(),
+  }) {
     if ($default != null) {
       return $default(this);
     }
@@ -497,12 +505,14 @@ class _$MethodBase implements MethodBase {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$MethodBaseToJson(this)..['runtimeType'] = 'default';
+    return _$$MethodBaseToJson(
+      this,
+    );
   }
 }
 
 abstract class MethodBase implements MethodNode {
-  const factory MethodBase({@required String name}) = _$MethodBase;
+  const factory MethodBase({required final String name}) = _$MethodBase;
 
   factory MethodBase.fromJson(Map<String, dynamic> json) =
       _$MethodBase.fromJson;
@@ -510,55 +520,74 @@ abstract class MethodBase implements MethodNode {
   @override
   String get name;
   @override
-  $MethodBaseCopyWith<MethodBase> get copyWith;
+  @JsonKey(ignore: true)
+  _$$MethodBaseCopyWith<_$MethodBase> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MethodValuesCopyWith<$Res>
+abstract class _$$MethodValuesCopyWith<$Res>
     implements $MethodNodeCopyWith<$Res> {
-  factory $MethodValuesCopyWith(
-          MethodValues value, $Res Function(MethodValues) then) =
-      _$MethodValuesCopyWithImpl<$Res>;
+  factory _$$MethodValuesCopyWith(
+          _$MethodValues value, $Res Function(_$MethodValues) then) =
+      __$$MethodValuesCopyWithImpl<$Res>;
   @override
-  $Res call({String name, List<MethodNode> values});
+  @useResult
+  $Res call({String name, List<MethodNode>? values});
 }
 
 /// @nodoc
-class _$MethodValuesCopyWithImpl<$Res> extends _$MethodNodeCopyWithImpl<$Res>
-    implements $MethodValuesCopyWith<$Res> {
-  _$MethodValuesCopyWithImpl(
-      MethodValues _value, $Res Function(MethodValues) _then)
-      : super(_value, (v) => _then(v as MethodValues));
+class __$$MethodValuesCopyWithImpl<$Res>
+    extends _$MethodNodeCopyWithImpl<$Res, _$MethodValues>
+    implements _$$MethodValuesCopyWith<$Res> {
+  __$$MethodValuesCopyWithImpl(
+      _$MethodValues _value, $Res Function(_$MethodValues) _then)
+      : super(_value, _then);
 
-  @override
-  MethodValues get _value => super._value as MethodValues;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object name = freezed,
-    Object values = freezed,
+    Object? name = null,
+    Object? values = freezed,
   }) {
-    return _then(MethodValues(
-      name: name == freezed ? _value.name : name as String,
-      values: values == freezed ? _value.values : values as List<MethodNode>,
+    return _then(_$MethodValues(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      values: freezed == values
+          ? _value._values
+          : values // ignore: cast_nullable_to_non_nullable
+              as List<MethodNode>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$MethodValues implements MethodValues {
-  const _$MethodValues({@required this.name, this.values})
-      : assert(name != null);
+  const _$MethodValues(
+      {required this.name, final List<MethodNode>? values, final String? $type})
+      : _values = values,
+        $type = $type ?? 'values';
 
   factory _$MethodValues.fromJson(Map<String, dynamic> json) =>
-      _$_$MethodValuesFromJson(json);
+      _$$MethodValuesFromJson(json);
 
   @override
   final String name;
+  final List<MethodNode>? _values;
   @override
-  final List<MethodNode> values;
+  List<MethodNode>? get values {
+    final value = _values;
+    if (value == null) return null;
+    if (_values is EqualUnmodifiableListView) return _values;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  @JsonKey(name: 'runtimeType')
+  final String $type;
 
   @override
   String toString() {
@@ -568,57 +597,69 @@ class _$MethodValues implements MethodValues {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is MethodValues &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.values, values) ||
-                const DeepCollectionEquality().equals(other.values, values)));
+        (other.runtimeType == runtimeType &&
+            other is _$MethodValues &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other._values, _values));
   }
 
+  @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(values);
+  int get hashCode => Object.hash(
+      runtimeType, name, const DeepCollectionEquality().hash(_values));
 
+  @JsonKey(ignore: true)
   @override
-  $MethodValuesCopyWith<MethodValues> get copyWith =>
-      _$MethodValuesCopyWithImpl<MethodValues>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MethodValuesCopyWith<_$MethodValues> get copyWith =>
+      __$$MethodValuesCopyWithImpl<_$MethodValues>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(String name), {
-    @required Result values(String name, List<MethodNode> values),
-    @required
-        Result binary(
-            String name, MethodNode left, MethodNode right, String operation),
-    @required
-        Result constructor(
-            String name, String value, Map<String, MethodNode> arguments),
-    @required Result simple(String name, dynamic value),
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default, {
+    required TResult Function(String name, List<MethodNode>? values) values,
+    required TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)
+        binary,
+    required TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)
+        constructor,
+    required TResult Function(String name, dynamic value) simple,
   }) {
-    assert($default != null);
-    assert(values != null);
-    assert(binary != null);
-    assert(constructor != null);
-    assert(simple != null);
     return values(name, this.values);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(String name), {
-    Result values(String name, List<MethodNode> values),
-    Result binary(
-        String name, MethodNode left, MethodNode right, String operation),
-    Result constructor(
-        String name, String value, Map<String, MethodNode> arguments),
-    Result simple(String name, dynamic value),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default, {
+    TResult? Function(String name, List<MethodNode>? values)? values,
+    TResult? Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult? Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult? Function(String name, dynamic value)? simple,
   }) {
-    assert(orElse != null);
+    return values?.call(name, this.values);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    TResult Function(String name, List<MethodNode>? values)? values,
+    TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult Function(String name, dynamic value)? simple,
+    required TResult orElse(),
+  }) {
     if (values != null) {
       return values(name, this.values);
     }
@@ -627,32 +668,38 @@ class _$MethodValues implements MethodValues {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(MethodBase value), {
-    @required Result values(MethodValues value),
-    @required Result binary(MethodBinary value),
-    @required Result constructor(MethodConstructor value),
-    @required Result simple(MethodSimple value),
+  TResult map<TResult extends Object?>(
+    TResult Function(MethodBase value) $default, {
+    required TResult Function(MethodValues value) values,
+    required TResult Function(MethodBinary value) binary,
+    required TResult Function(MethodConstructor value) constructor,
+    required TResult Function(MethodSimple value) simple,
   }) {
-    assert($default != null);
-    assert(values != null);
-    assert(binary != null);
-    assert(constructor != null);
-    assert(simple != null);
     return values(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(MethodBase value), {
-    Result values(MethodValues value),
-    Result binary(MethodBinary value),
-    Result constructor(MethodConstructor value),
-    Result simple(MethodSimple value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(MethodBase value)? $default, {
+    TResult? Function(MethodValues value)? values,
+    TResult? Function(MethodBinary value)? binary,
+    TResult? Function(MethodConstructor value)? constructor,
+    TResult? Function(MethodSimple value)? simple,
   }) {
-    assert(orElse != null);
+    return values?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(MethodBase value)? $default, {
+    TResult Function(MethodValues value)? values,
+    TResult Function(MethodBinary value)? binary,
+    TResult Function(MethodConstructor value)? constructor,
+    TResult Function(MethodSimple value)? simple,
+    required TResult orElse(),
+  }) {
     if (values != null) {
       return values(this);
     }
@@ -661,31 +708,37 @@ class _$MethodValues implements MethodValues {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$MethodValuesToJson(this)..['runtimeType'] = 'values';
+    return _$$MethodValuesToJson(
+      this,
+    );
   }
 }
 
 abstract class MethodValues implements MethodNode {
-  const factory MethodValues({@required String name, List<MethodNode> values}) =
-      _$MethodValues;
+  const factory MethodValues(
+      {required final String name,
+      final List<MethodNode>? values}) = _$MethodValues;
 
   factory MethodValues.fromJson(Map<String, dynamic> json) =
       _$MethodValues.fromJson;
 
   @override
   String get name;
-  List<MethodNode> get values;
+  List<MethodNode>? get values;
   @override
-  $MethodValuesCopyWith<MethodValues> get copyWith;
+  @JsonKey(ignore: true)
+  _$$MethodValuesCopyWith<_$MethodValues> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MethodBinaryCopyWith<$Res>
+abstract class _$$MethodBinaryCopyWith<$Res>
     implements $MethodNodeCopyWith<$Res> {
-  factory $MethodBinaryCopyWith(
-          MethodBinary value, $Res Function(MethodBinary) then) =
-      _$MethodBinaryCopyWithImpl<$Res>;
+  factory _$$MethodBinaryCopyWith(
+          _$MethodBinary value, $Res Function(_$MethodBinary) then) =
+      __$$MethodBinaryCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, MethodNode left, MethodNode right, String operation});
 
   $MethodNodeCopyWith<$Res> get left;
@@ -693,67 +746,71 @@ abstract class $MethodBinaryCopyWith<$Res>
 }
 
 /// @nodoc
-class _$MethodBinaryCopyWithImpl<$Res> extends _$MethodNodeCopyWithImpl<$Res>
-    implements $MethodBinaryCopyWith<$Res> {
-  _$MethodBinaryCopyWithImpl(
-      MethodBinary _value, $Res Function(MethodBinary) _then)
-      : super(_value, (v) => _then(v as MethodBinary));
+class __$$MethodBinaryCopyWithImpl<$Res>
+    extends _$MethodNodeCopyWithImpl<$Res, _$MethodBinary>
+    implements _$$MethodBinaryCopyWith<$Res> {
+  __$$MethodBinaryCopyWithImpl(
+      _$MethodBinary _value, $Res Function(_$MethodBinary) _then)
+      : super(_value, _then);
 
-  @override
-  MethodBinary get _value => super._value as MethodBinary;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object name = freezed,
-    Object left = freezed,
-    Object right = freezed,
-    Object operation = freezed,
+    Object? name = null,
+    Object? left = null,
+    Object? right = null,
+    Object? operation = null,
   }) {
-    return _then(MethodBinary(
-      name: name == freezed ? _value.name : name as String,
-      left: left == freezed ? _value.left : left as MethodNode,
-      right: right == freezed ? _value.right : right as MethodNode,
-      operation: operation == freezed ? _value.operation : operation as String,
+    return _then(_$MethodBinary(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      left: null == left
+          ? _value.left
+          : left // ignore: cast_nullable_to_non_nullable
+              as MethodNode,
+      right: null == right
+          ? _value.right
+          : right // ignore: cast_nullable_to_non_nullable
+              as MethodNode,
+      operation: null == operation
+          ? _value.operation
+          : operation // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MethodNodeCopyWith<$Res> get left {
-    if (_value.left == null) {
-      return null;
-    }
     return $MethodNodeCopyWith<$Res>(_value.left, (value) {
       return _then(_value.copyWith(left: value));
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MethodNodeCopyWith<$Res> get right {
-    if (_value.right == null) {
-      return null;
-    }
     return $MethodNodeCopyWith<$Res>(_value.right, (value) {
       return _then(_value.copyWith(right: value));
     });
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$MethodBinary implements MethodBinary {
   const _$MethodBinary(
-      {@required this.name,
-      @required this.left,
-      @required this.right,
-      @required this.operation})
-      : assert(name != null),
-        assert(left != null),
-        assert(right != null),
-        assert(operation != null);
+      {required this.name,
+      required this.left,
+      required this.right,
+      required this.operation,
+      final String? $type})
+      : $type = $type ?? 'binary';
 
   factory _$MethodBinary.fromJson(Map<String, dynamic> json) =>
-      _$_$MethodBinaryFromJson(json);
+      _$$MethodBinaryFromJson(json);
 
   @override
   final String name;
@@ -764,6 +821,9 @@ class _$MethodBinary implements MethodBinary {
   @override
   final String operation;
 
+  @JsonKey(name: 'runtimeType')
+  final String $type;
+
   @override
   String toString() {
     return 'MethodNode.binary(name: $name, left: $left, right: $right, operation: $operation)';
@@ -772,64 +832,71 @@ class _$MethodBinary implements MethodBinary {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is MethodBinary &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.left, left) ||
-                const DeepCollectionEquality().equals(other.left, left)) &&
-            (identical(other.right, right) ||
-                const DeepCollectionEquality().equals(other.right, right)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$MethodBinary &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.left, left) || other.left == left) &&
+            (identical(other.right, right) || other.right == right) &&
             (identical(other.operation, operation) ||
-                const DeepCollectionEquality()
-                    .equals(other.operation, operation)));
+                other.operation == operation));
   }
 
+  @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(left) ^
-      const DeepCollectionEquality().hash(right) ^
-      const DeepCollectionEquality().hash(operation);
+  int get hashCode => Object.hash(runtimeType, name, left, right, operation);
 
+  @JsonKey(ignore: true)
   @override
-  $MethodBinaryCopyWith<MethodBinary> get copyWith =>
-      _$MethodBinaryCopyWithImpl<MethodBinary>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MethodBinaryCopyWith<_$MethodBinary> get copyWith =>
+      __$$MethodBinaryCopyWithImpl<_$MethodBinary>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(String name), {
-    @required Result values(String name, List<MethodNode> values),
-    @required
-        Result binary(
-            String name, MethodNode left, MethodNode right, String operation),
-    @required
-        Result constructor(
-            String name, String value, Map<String, MethodNode> arguments),
-    @required Result simple(String name, dynamic value),
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default, {
+    required TResult Function(String name, List<MethodNode>? values) values,
+    required TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)
+        binary,
+    required TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)
+        constructor,
+    required TResult Function(String name, dynamic value) simple,
   }) {
-    assert($default != null);
-    assert(values != null);
-    assert(binary != null);
-    assert(constructor != null);
-    assert(simple != null);
     return binary(name, left, right, operation);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(String name), {
-    Result values(String name, List<MethodNode> values),
-    Result binary(
-        String name, MethodNode left, MethodNode right, String operation),
-    Result constructor(
-        String name, String value, Map<String, MethodNode> arguments),
-    Result simple(String name, dynamic value),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default, {
+    TResult? Function(String name, List<MethodNode>? values)? values,
+    TResult? Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult? Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult? Function(String name, dynamic value)? simple,
   }) {
-    assert(orElse != null);
+    return binary?.call(name, left, right, operation);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    TResult Function(String name, List<MethodNode>? values)? values,
+    TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult Function(String name, dynamic value)? simple,
+    required TResult orElse(),
+  }) {
     if (binary != null) {
       return binary(name, left, right, operation);
     }
@@ -838,32 +905,38 @@ class _$MethodBinary implements MethodBinary {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(MethodBase value), {
-    @required Result values(MethodValues value),
-    @required Result binary(MethodBinary value),
-    @required Result constructor(MethodConstructor value),
-    @required Result simple(MethodSimple value),
+  TResult map<TResult extends Object?>(
+    TResult Function(MethodBase value) $default, {
+    required TResult Function(MethodValues value) values,
+    required TResult Function(MethodBinary value) binary,
+    required TResult Function(MethodConstructor value) constructor,
+    required TResult Function(MethodSimple value) simple,
   }) {
-    assert($default != null);
-    assert(values != null);
-    assert(binary != null);
-    assert(constructor != null);
-    assert(simple != null);
     return binary(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(MethodBase value), {
-    Result values(MethodValues value),
-    Result binary(MethodBinary value),
-    Result constructor(MethodConstructor value),
-    Result simple(MethodSimple value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(MethodBase value)? $default, {
+    TResult? Function(MethodValues value)? values,
+    TResult? Function(MethodBinary value)? binary,
+    TResult? Function(MethodConstructor value)? constructor,
+    TResult? Function(MethodSimple value)? simple,
   }) {
-    assert(orElse != null);
+    return binary?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(MethodBase value)? $default, {
+    TResult Function(MethodValues value)? values,
+    TResult Function(MethodBinary value)? binary,
+    TResult Function(MethodConstructor value)? constructor,
+    TResult Function(MethodSimple value)? simple,
+    required TResult orElse(),
+  }) {
     if (binary != null) {
       return binary(this);
     }
@@ -872,16 +945,18 @@ class _$MethodBinary implements MethodBinary {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$MethodBinaryToJson(this)..['runtimeType'] = 'binary';
+    return _$$MethodBinaryToJson(
+      this,
+    );
   }
 }
 
 abstract class MethodBinary implements MethodNode {
   const factory MethodBinary(
-      {@required String name,
-      @required MethodNode left,
-      @required MethodNode right,
-      @required String operation}) = _$MethodBinary;
+      {required final String name,
+      required final MethodNode left,
+      required final MethodNode right,
+      required final String operation}) = _$MethodBinary;
 
   factory MethodBinary.fromJson(Map<String, dynamic> json) =
       _$MethodBinary.fromJson;
@@ -892,66 +967,83 @@ abstract class MethodBinary implements MethodNode {
   MethodNode get right;
   String get operation;
   @override
-  $MethodBinaryCopyWith<MethodBinary> get copyWith;
+  @JsonKey(ignore: true)
+  _$$MethodBinaryCopyWith<_$MethodBinary> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MethodConstructorCopyWith<$Res>
+abstract class _$$MethodConstructorCopyWith<$Res>
     implements $MethodNodeCopyWith<$Res> {
-  factory $MethodConstructorCopyWith(
-          MethodConstructor value, $Res Function(MethodConstructor) then) =
-      _$MethodConstructorCopyWithImpl<$Res>;
+  factory _$$MethodConstructorCopyWith(
+          _$MethodConstructor value, $Res Function(_$MethodConstructor) then) =
+      __$$MethodConstructorCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, String value, Map<String, MethodNode> arguments});
 }
 
 /// @nodoc
-class _$MethodConstructorCopyWithImpl<$Res>
-    extends _$MethodNodeCopyWithImpl<$Res>
-    implements $MethodConstructorCopyWith<$Res> {
-  _$MethodConstructorCopyWithImpl(
-      MethodConstructor _value, $Res Function(MethodConstructor) _then)
-      : super(_value, (v) => _then(v as MethodConstructor));
+class __$$MethodConstructorCopyWithImpl<$Res>
+    extends _$MethodNodeCopyWithImpl<$Res, _$MethodConstructor>
+    implements _$$MethodConstructorCopyWith<$Res> {
+  __$$MethodConstructorCopyWithImpl(
+      _$MethodConstructor _value, $Res Function(_$MethodConstructor) _then)
+      : super(_value, _then);
 
-  @override
-  MethodConstructor get _value => super._value as MethodConstructor;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object name = freezed,
-    Object value = freezed,
-    Object arguments = freezed,
+    Object? name = null,
+    Object? value = null,
+    Object? arguments = null,
   }) {
-    return _then(MethodConstructor(
-      name: name == freezed ? _value.name : name as String,
-      value: value == freezed ? _value.value : value as String,
-      arguments: arguments == freezed
-          ? _value.arguments
-          : arguments as Map<String, MethodNode>,
+    return _then(_$MethodConstructor(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      value: null == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as String,
+      arguments: null == arguments
+          ? _value._arguments
+          : arguments // ignore: cast_nullable_to_non_nullable
+              as Map<String, MethodNode>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$MethodConstructor implements MethodConstructor {
   const _$MethodConstructor(
-      {@required this.name, @required this.value, this.arguments = const {}})
-      : assert(name != null),
-        assert(value != null),
-        assert(arguments != null);
+      {required this.name,
+      required this.value,
+      final Map<String, MethodNode> arguments = const {},
+      final String? $type})
+      : _arguments = arguments,
+        $type = $type ?? 'constructor';
 
   factory _$MethodConstructor.fromJson(Map<String, dynamic> json) =>
-      _$_$MethodConstructorFromJson(json);
+      _$$MethodConstructorFromJson(json);
 
   @override
   final String name;
   @override
   final String value;
-  @JsonKey(defaultValue: const {})
+  final Map<String, MethodNode> _arguments;
   @override
-  final Map<String, MethodNode> arguments;
+  @JsonKey()
+  Map<String, MethodNode> get arguments {
+    if (_arguments is EqualUnmodifiableMapView) return _arguments;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_arguments);
+  }
+
+  @JsonKey(name: 'runtimeType')
+  final String $type;
 
   @override
   String toString() {
@@ -961,61 +1053,71 @@ class _$MethodConstructor implements MethodConstructor {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is MethodConstructor &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.value, value) ||
-                const DeepCollectionEquality().equals(other.value, value)) &&
-            (identical(other.arguments, arguments) ||
-                const DeepCollectionEquality()
-                    .equals(other.arguments, arguments)));
+        (other.runtimeType == runtimeType &&
+            other is _$MethodConstructor &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.value, value) || other.value == value) &&
+            const DeepCollectionEquality()
+                .equals(other._arguments, _arguments));
   }
 
+  @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(value) ^
-      const DeepCollectionEquality().hash(arguments);
+  int get hashCode => Object.hash(runtimeType, name, value,
+      const DeepCollectionEquality().hash(_arguments));
 
+  @JsonKey(ignore: true)
   @override
-  $MethodConstructorCopyWith<MethodConstructor> get copyWith =>
-      _$MethodConstructorCopyWithImpl<MethodConstructor>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MethodConstructorCopyWith<_$MethodConstructor> get copyWith =>
+      __$$MethodConstructorCopyWithImpl<_$MethodConstructor>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(String name), {
-    @required Result values(String name, List<MethodNode> values),
-    @required
-        Result binary(
-            String name, MethodNode left, MethodNode right, String operation),
-    @required
-        Result constructor(
-            String name, String value, Map<String, MethodNode> arguments),
-    @required Result simple(String name, dynamic value),
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default, {
+    required TResult Function(String name, List<MethodNode>? values) values,
+    required TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)
+        binary,
+    required TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)
+        constructor,
+    required TResult Function(String name, dynamic value) simple,
   }) {
-    assert($default != null);
-    assert(values != null);
-    assert(binary != null);
-    assert(constructor != null);
-    assert(simple != null);
     return constructor(name, value, arguments);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(String name), {
-    Result values(String name, List<MethodNode> values),
-    Result binary(
-        String name, MethodNode left, MethodNode right, String operation),
-    Result constructor(
-        String name, String value, Map<String, MethodNode> arguments),
-    Result simple(String name, dynamic value),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default, {
+    TResult? Function(String name, List<MethodNode>? values)? values,
+    TResult? Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult? Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult? Function(String name, dynamic value)? simple,
   }) {
-    assert(orElse != null);
+    return constructor?.call(name, value, arguments);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    TResult Function(String name, List<MethodNode>? values)? values,
+    TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult Function(String name, dynamic value)? simple,
+    required TResult orElse(),
+  }) {
     if (constructor != null) {
       return constructor(name, value, arguments);
     }
@@ -1024,32 +1126,38 @@ class _$MethodConstructor implements MethodConstructor {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(MethodBase value), {
-    @required Result values(MethodValues value),
-    @required Result binary(MethodBinary value),
-    @required Result constructor(MethodConstructor value),
-    @required Result simple(MethodSimple value),
+  TResult map<TResult extends Object?>(
+    TResult Function(MethodBase value) $default, {
+    required TResult Function(MethodValues value) values,
+    required TResult Function(MethodBinary value) binary,
+    required TResult Function(MethodConstructor value) constructor,
+    required TResult Function(MethodSimple value) simple,
   }) {
-    assert($default != null);
-    assert(values != null);
-    assert(binary != null);
-    assert(constructor != null);
-    assert(simple != null);
     return constructor(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(MethodBase value), {
-    Result values(MethodValues value),
-    Result binary(MethodBinary value),
-    Result constructor(MethodConstructor value),
-    Result simple(MethodSimple value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(MethodBase value)? $default, {
+    TResult? Function(MethodValues value)? values,
+    TResult? Function(MethodBinary value)? binary,
+    TResult? Function(MethodConstructor value)? constructor,
+    TResult? Function(MethodSimple value)? simple,
   }) {
-    assert(orElse != null);
+    return constructor?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(MethodBase value)? $default, {
+    TResult Function(MethodValues value)? values,
+    TResult Function(MethodBinary value)? binary,
+    TResult Function(MethodConstructor value)? constructor,
+    TResult Function(MethodSimple value)? simple,
+    required TResult orElse(),
+  }) {
     if (constructor != null) {
       return constructor(this);
     }
@@ -1058,15 +1166,17 @@ class _$MethodConstructor implements MethodConstructor {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$MethodConstructorToJson(this)..['runtimeType'] = 'constructor';
+    return _$$MethodConstructorToJson(
+      this,
+    );
   }
 }
 
 abstract class MethodConstructor implements MethodNode {
   const factory MethodConstructor(
-      {@required String name,
-      @required String value,
-      Map<String, MethodNode> arguments}) = _$MethodConstructor;
+      {required final String name,
+      required final String value,
+      final Map<String, MethodNode> arguments}) = _$MethodConstructor;
 
   factory MethodConstructor.fromJson(Map<String, dynamic> json) =
       _$MethodConstructor.fromJson;
@@ -1076,56 +1186,66 @@ abstract class MethodConstructor implements MethodNode {
   String get value;
   Map<String, MethodNode> get arguments;
   @override
-  $MethodConstructorCopyWith<MethodConstructor> get copyWith;
+  @JsonKey(ignore: true)
+  _$$MethodConstructorCopyWith<_$MethodConstructor> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MethodSimpleCopyWith<$Res>
+abstract class _$$MethodSimpleCopyWith<$Res>
     implements $MethodNodeCopyWith<$Res> {
-  factory $MethodSimpleCopyWith(
-          MethodSimple value, $Res Function(MethodSimple) then) =
-      _$MethodSimpleCopyWithImpl<$Res>;
+  factory _$$MethodSimpleCopyWith(
+          _$MethodSimple value, $Res Function(_$MethodSimple) then) =
+      __$$MethodSimpleCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, dynamic value});
 }
 
 /// @nodoc
-class _$MethodSimpleCopyWithImpl<$Res> extends _$MethodNodeCopyWithImpl<$Res>
-    implements $MethodSimpleCopyWith<$Res> {
-  _$MethodSimpleCopyWithImpl(
-      MethodSimple _value, $Res Function(MethodSimple) _then)
-      : super(_value, (v) => _then(v as MethodSimple));
+class __$$MethodSimpleCopyWithImpl<$Res>
+    extends _$MethodNodeCopyWithImpl<$Res, _$MethodSimple>
+    implements _$$MethodSimpleCopyWith<$Res> {
+  __$$MethodSimpleCopyWithImpl(
+      _$MethodSimple _value, $Res Function(_$MethodSimple) _then)
+      : super(_value, _then);
 
-  @override
-  MethodSimple get _value => super._value as MethodSimple;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object name = freezed,
-    Object value = freezed,
+    Object? name = null,
+    Object? value = freezed,
   }) {
-    return _then(MethodSimple(
-      name: name == freezed ? _value.name : name as String,
-      value: value == freezed ? _value.value : value as dynamic,
+    return _then(_$MethodSimple(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      value: freezed == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as dynamic,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$MethodSimple implements MethodSimple {
-  const _$MethodSimple({@required this.name, @required this.value})
-      : assert(name != null),
-        assert(value != null);
+  const _$MethodSimple(
+      {required this.name, required this.value, final String? $type})
+      : $type = $type ?? 'simple';
 
   factory _$MethodSimple.fromJson(Map<String, dynamic> json) =>
-      _$_$MethodSimpleFromJson(json);
+      _$$MethodSimpleFromJson(json);
 
   @override
   final String name;
   @override
   final dynamic value;
+
+  @JsonKey(name: 'runtimeType')
+  final String $type;
 
   @override
   String toString() {
@@ -1135,57 +1255,69 @@ class _$MethodSimple implements MethodSimple {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is MethodSimple &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.value, value) ||
-                const DeepCollectionEquality().equals(other.value, value)));
+        (other.runtimeType == runtimeType &&
+            other is _$MethodSimple &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.value, value));
   }
 
+  @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(value);
+  int get hashCode => Object.hash(
+      runtimeType, name, const DeepCollectionEquality().hash(value));
 
+  @JsonKey(ignore: true)
   @override
-  $MethodSimpleCopyWith<MethodSimple> get copyWith =>
-      _$MethodSimpleCopyWithImpl<MethodSimple>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MethodSimpleCopyWith<_$MethodSimple> get copyWith =>
+      __$$MethodSimpleCopyWithImpl<_$MethodSimple>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(String name), {
-    @required Result values(String name, List<MethodNode> values),
-    @required
-        Result binary(
-            String name, MethodNode left, MethodNode right, String operation),
-    @required
-        Result constructor(
-            String name, String value, Map<String, MethodNode> arguments),
-    @required Result simple(String name, dynamic value),
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default, {
+    required TResult Function(String name, List<MethodNode>? values) values,
+    required TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)
+        binary,
+    required TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)
+        constructor,
+    required TResult Function(String name, dynamic value) simple,
   }) {
-    assert($default != null);
-    assert(values != null);
-    assert(binary != null);
-    assert(constructor != null);
-    assert(simple != null);
     return simple(name, value);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(String name), {
-    Result values(String name, List<MethodNode> values),
-    Result binary(
-        String name, MethodNode left, MethodNode right, String operation),
-    Result constructor(
-        String name, String value, Map<String, MethodNode> arguments),
-    Result simple(String name, dynamic value),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default, {
+    TResult? Function(String name, List<MethodNode>? values)? values,
+    TResult? Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult? Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult? Function(String name, dynamic value)? simple,
   }) {
-    assert(orElse != null);
+    return simple?.call(name, value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    TResult Function(String name, List<MethodNode>? values)? values,
+    TResult Function(
+            String name, MethodNode left, MethodNode right, String operation)?
+        binary,
+    TResult Function(
+            String name, String value, Map<String, MethodNode> arguments)?
+        constructor,
+    TResult Function(String name, dynamic value)? simple,
+    required TResult orElse(),
+  }) {
     if (simple != null) {
       return simple(name, value);
     }
@@ -1194,32 +1326,38 @@ class _$MethodSimple implements MethodSimple {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(MethodBase value), {
-    @required Result values(MethodValues value),
-    @required Result binary(MethodBinary value),
-    @required Result constructor(MethodConstructor value),
-    @required Result simple(MethodSimple value),
+  TResult map<TResult extends Object?>(
+    TResult Function(MethodBase value) $default, {
+    required TResult Function(MethodValues value) values,
+    required TResult Function(MethodBinary value) binary,
+    required TResult Function(MethodConstructor value) constructor,
+    required TResult Function(MethodSimple value) simple,
   }) {
-    assert($default != null);
-    assert(values != null);
-    assert(binary != null);
-    assert(constructor != null);
-    assert(simple != null);
     return simple(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(MethodBase value), {
-    Result values(MethodValues value),
-    Result binary(MethodBinary value),
-    Result constructor(MethodConstructor value),
-    Result simple(MethodSimple value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(MethodBase value)? $default, {
+    TResult? Function(MethodValues value)? values,
+    TResult? Function(MethodBinary value)? binary,
+    TResult? Function(MethodConstructor value)? constructor,
+    TResult? Function(MethodSimple value)? simple,
   }) {
-    assert(orElse != null);
+    return simple?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(MethodBase value)? $default, {
+    TResult Function(MethodValues value)? values,
+    TResult Function(MethodBinary value)? binary,
+    TResult Function(MethodConstructor value)? constructor,
+    TResult Function(MethodSimple value)? simple,
+    required TResult orElse(),
+  }) {
     if (simple != null) {
       return simple(this);
     }
@@ -1228,13 +1366,16 @@ class _$MethodSimple implements MethodSimple {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$MethodSimpleToJson(this)..['runtimeType'] = 'simple';
+    return _$$MethodSimpleToJson(
+      this,
+    );
   }
 }
 
 abstract class MethodSimple implements MethodNode {
-  const factory MethodSimple({@required String name, @required dynamic value}) =
-      _$MethodSimple;
+  const factory MethodSimple(
+      {required final String name,
+      required final dynamic value}) = _$MethodSimple;
 
   factory MethodSimple.fromJson(Map<String, dynamic> json) =
       _$MethodSimple.fromJson;
@@ -1243,5 +1384,7 @@ abstract class MethodSimple implements MethodNode {
   String get name;
   dynamic get value;
   @override
-  $MethodSimpleCopyWith<MethodSimple> get copyWith;
+  @JsonKey(ignore: true)
+  _$$MethodSimpleCopyWith<_$MethodSimple> get copyWith =>
+      throw _privateConstructorUsedError;
 }
